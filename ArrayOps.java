@@ -29,4 +29,9 @@ public class ArrayOps {
     }
     return a;
   }
+  public static int sum(int[][] arr) {
+    int x = sum(sumRows(arr));
+    return x;
+  }
+
 }
