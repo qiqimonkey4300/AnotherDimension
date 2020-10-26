@@ -57,4 +57,13 @@ public class ArrayOps {
     }
     return rowsEqual;
   }
+  public static boolean isColMagic(int[][] matrix) {
+    boolean colsEqual = true;
+    for (int i = 0; colsEqual == true && i < matrix[0].length - 1; i++) {
+      if (sum(arrayCols(matrix, i)) != sum(arrayCols(matrix, i + 1))) {
+        colsEqual = false;
+      }
+    }
+    return colsEqual;
+  }
 }
